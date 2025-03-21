@@ -1,0 +1,17 @@
+import jav.util.*;
+class MyClass{
+    public static void display(){
+        System.out.println("Hello World");
+    }
+}
+class GfG{
+public static void main(String args[]){
+Scanner ob = new Scanner(System.in);
+int t = ob.nextInt();
+while(t-- > 0){
+MyClass obj = new MyClass();
+obj.display();
+System.out.println("~");
+}
+}
+}
