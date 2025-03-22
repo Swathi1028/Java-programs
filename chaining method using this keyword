@@ -1,0 +1,32 @@
+class Point {
+    int x, y;
+
+    Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    Point setX(int x) {
+        this.x = x;
+        return this;  
+    }
+
+    Point setY(int y) {
+        this.y = y;
+        return this;  
+    }
+
+    void print() {
+        System.out.println("x = " + x + ", y = " + y);
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Point p1 = new Point(10, 20);
+
+       
+        p1.setX(2).setY(3);
+        p1.print(); 
+    }
+}
