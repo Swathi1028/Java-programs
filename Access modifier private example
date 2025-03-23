@@ -1,0 +1,15 @@
+class A {
+    private int x = 10;
+
+    int getX() {
+        return x;
+    }
+}
+
+class B {
+    public static void main(String[] args) {
+        A a = new A();
+        // Cannot directly access 'x' as it is private
+        System.out.println(a.getX());
+    }
+}
