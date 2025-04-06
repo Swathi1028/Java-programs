@@ -1,0 +1,6 @@
+class GfG {
+    public static void main(String[] args) {
+        int x = 100, y = 200;
+        System.out.printf("x = %d, y = %d", x, y);
+    }
+}
