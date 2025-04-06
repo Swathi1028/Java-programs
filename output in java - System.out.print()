@@ -1,0 +1,7 @@
+class GfG {
+    public static void main(String[] args) {
+        String str = "GFG";
+        System.out.print(str + " ");
+        System.out.print("Courses");
+    }
+}
