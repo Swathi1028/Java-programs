@@ -1,0 +1,8 @@
+class GfG {
+    public static void main(String[] args) {
+        int x = 10;
+        int y = 20;
+        System.out.println(x);      // Outputs x on a new line
+        System.out.println(x + y); // Outputs the sum of x and y on a new line
+    }
+}
