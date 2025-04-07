@@ -1,0 +1,18 @@
+import java.util.*;
+class Main
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    String name = sc.nextLine();
+    int age = sc.nextInt();
+    float CGPA = sc.nextFloat();
+    float cgpa = (int)(CGPA*100);
+    char grade = sc.next().charAt(0);
+    System.out.println("Name: " + name);
+    System.out.println("Age: " + age);
+    System.out.println("CGPA: " + cgpa/100);
+    System.out.println("Grade: " + grade);
+    
+  }
+}
