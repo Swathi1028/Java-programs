@@ -1,0 +1,16 @@
+import java.util.*;
+public class GfG{
+public static void main(String[] args){
+Scanner sc = new Scanner(System.in);
+String a = sc.nextLine();
+String b = sc.nextLine();
+String sep = sc.nextLine();
+System.out.println(a + sep + b);
+}
+}
+
+
+
+
+
+
