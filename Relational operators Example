@@ -1,0 +1,23 @@
+public class GfG {
+    public static void main(String[] args) {
+        int x = 10, y = 20;
+
+        // Equal to
+        System.out.println("Equal to: " + (x == y)); 
+
+        // Not equal to
+        System.out.println("Not equal to: " + (x != y)); 
+
+        // Greater than
+        System.out.println("Greater than: " + (x > y)); 
+
+        // Less than
+        System.out.println("Less than: " + (x < y)); 
+
+        // Greater than or equal to
+        System.out.println("Greater than or equal to: " + (x >= y)); 
+
+        // Less than or equal to
+        System.out.println("Less than or equal to: " + (x <= y));
+    }
+}
