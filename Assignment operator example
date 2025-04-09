@@ -1,0 +1,22 @@
+public class GfG {
+    public static void main(String[] args) {
+        int x = 10, y = 5;
+
+        // Simple assignment
+        x = y; // x is now 5
+        System.out.println("After assignment: " + x);
+
+        // Compound assignments
+        x += y; // x = x + y
+        System.out.println("After addition assignment: " + x);
+
+        x -= y; // x = x - y
+        System.out.println("After subtraction assignment: " + x);
+
+        x *= y; // x = x * y
+        System.out.println("After multiplication assignment: " + x);
+
+        x /= y; // x = x / y
+        System.out.println("After division assignment: " + x);
+    }
+}
