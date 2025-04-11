@@ -1,0 +1,9 @@
+import java.io.*;
+class GfG {
+    // Driver code
+    public static void main(String args[]) {
+        int n = 5;
+        int sum = n * (n + 1) / 2;//formula
+        System.out.println(sum);
+    }
+}
