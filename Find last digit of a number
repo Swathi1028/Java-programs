@@ -1,0 +1,10 @@
+import java.math.*;
+
+class GfG {
+
+    public static void main(String args[]) {
+        int n = -98562;
+        int lastDigit = Math.abs(n % 10);
+        System.out.println(lastDigit);
+    }
+}
