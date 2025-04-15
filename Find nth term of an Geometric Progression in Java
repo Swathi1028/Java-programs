@@ -1,0 +1,23 @@
+import java.io.*;
+import java.lang.*;
+
+class GfG {
+    public static void main(String[] args) {
+        // starting number
+        int a = 2;
+
+        // Common ratio
+        int r = 3;
+
+        // N th term to be find
+        int n = 5;
+
+        int term = a * (int)(Math.pow(r, n - 1));
+        // Function call
+        System.out.print(n + "th term of the series is : " 
+                         + term);
+    }
+}
+
+Output
+5th term of the series is : 162
