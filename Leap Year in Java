@@ -1,0 +1,25 @@
+class GfG {
+    public static void main(String[] args) {
+        int year = 2000;
+        boolean ans;
+        if (year % 400 == 0)
+            ans = true;
+      
+        // Else If a year is multiple of 100,
+        // then it is not a leap year
+        else if (year % 100 == 0)
+            ans = false;
+      
+        // Else If a year is multiple of 4,
+        // then it is a leap year
+        else if (year % 4 == 0)
+            ans = true;
+        else
+            ans = false;
+        System.out.println(ans ? "Leap Year"
+                               : "Not a Leap Year");
+    }
+}
+
+Output
+Leap Year
