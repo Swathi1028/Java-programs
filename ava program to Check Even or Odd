@@ -1,0 +1,16 @@
+public class GfG {
+    public static void main(String args[]) {
+        // Predefined number of cups
+        int n = 4; // Change this value to test different inputs
+
+        // Check if the number is even or odd
+        if (n % 2 == 0) {
+            System.out.println("Opponent");
+        } else {
+            System.out.println("You");
+        }
+    }
+}
+
+Output
+Opponent
