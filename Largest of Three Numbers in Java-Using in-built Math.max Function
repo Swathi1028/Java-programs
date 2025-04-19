@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+class GfG {
+
+    public static void main(String[] args) {
+        // Considering random integers three numbers
+        int a = 5, b = 10, c = 3;
+        int temp = Math.max(a, b);
+        int largest = Math.max(temp, c);
+        // Printing the largest number
+        System.out.println(largest
+                           + " is the largest number.");
+        }
+    }
+
+Output
+10 is the largest number.
