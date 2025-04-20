@@ -1,0 +1,25 @@
+// Repeated Method Calls
+import java.io.*;
+import java.math.*;
+import java.util.*;
+
+public class GfG {
+    public static void main(String[] args) {
+        // Calling fun method twice
+        fun();
+        fun();
+    }
+
+    // fun method that adds two integers and prints the
+    // result
+    public static void fun() {
+        int x = 5, y = 10;
+
+        // Printing the sum of x and y
+        System.out.println(x + y);
+    }
+}
+
+Output
+15
+15
