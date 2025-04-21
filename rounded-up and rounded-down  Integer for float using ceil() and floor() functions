@@ -1,0 +1,21 @@
+import java.util.*;
+class Main
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    float a = sc.nextFloat();
+    System.out.println((int)a);
+    System.out.println((int)Math.ceil(a));
+    System.out.println((int)Math.floor(a));
+                                  
+  }
+}
+
+Input (stdin)
+54.5
+
+Your Output (stdout)
+54
+55
+54
