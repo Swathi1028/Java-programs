@@ -1,0 +1,21 @@
+import java.io.*;
+
+class GfG {
+    public static void main(String[] args) {
+        int n = 123;
+
+        // Print the first digit using the iterative method
+        System.out.println(printFirst(n));
+    }
+
+    // Method to find the first digit using iteration
+    public static int printFirst(int n) {
+        while (n >= 10) {
+            n = n / 10;  
+        }
+        return n; 
+    }
+}
+
+Output
+1
