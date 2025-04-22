@@ -1,0 +1,22 @@
+import java.io.*;
+
+class GFG {
+    public static void main(String[] args) {
+        int n = 987;
+
+        // Print the first digit using the mathematical method
+        System.out.println(firstDigit(n));
+    }
+
+    // Method to find the first digit using logarithms
+    public static int firstDigit(int n) {
+        double power = Math.log10(n); 
+        int p = (int) power;          
+        int a = (int) Math.pow(10, p); 
+        int ans = n / a;              
+        return ans;
+    }
+}
+
+Output
+9
