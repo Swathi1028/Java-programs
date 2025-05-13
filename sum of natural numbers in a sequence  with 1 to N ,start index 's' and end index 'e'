@@ -1,0 +1,35 @@
+public class SequenceSum {
+    public static int customSequenceSum(int N, int s, int e) {
+        int totalElements = 0;
+        int currentIndex = 0;
+        int sum = 0;
+        // First pass: Odd numbers from 1 to N-1
+        for (int i = 1; i < N; i += 2) {
+            currentIndex++;
+            if (currentIndex >= s && currentIndex < s + e) {
+                sum += i;
+            }
+            if (currentIndex >= s + e - 1) break;
+        }
+        // Continue with even numbers from 2 to N
+        for (int i = 2; i <= N && currentIndex < s + e - 1; i += 2) {
+            currentIndex++;
+            if (currentIndex >= s && currentIndex < s + e) {
+                sum += i;
+            }
+        }
+
+        return sum;
+    }
+    public static void main(String[] args) {
+        int N = 10;
+        int s = 1;
+        int e = 7;
+
+        int result = customSequenceSum(N, s, e);
+        System.out.println("Sum of selected numbers: " + result); // Output: 31
+    }
+}
+
+output:
+Sum of selected numbers: 31
