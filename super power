@@ -1,0 +1,21 @@
+class Solution {
+    private static final int MOD = 1337;
+    public int superPow(int a, int[] b) {
+        a %= MOD;
+        return powMod(a, b, b.length - 1);
+    }
+     private int powMod(int a, int[] b, int idx) {
+        if (idx < 0) return 1;
+        int part1 = modPow(a, b[idx]);
+        int part2 = modPow(powMod(a, b, idx - 1), 10);
+        return (part1 * part2) % MOD;
+    }
+    private int modPow(int a, int k) {
+        int result = 1;
+        a %= MOD;
+        for (int i = 0; i < k; i++) {
+            result = (result * a) % MOD;
+        }
+        return result;
+    }
+}
