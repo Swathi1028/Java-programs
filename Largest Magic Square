@@ -1,0 +1,45 @@
+class Solution {
+    public int largestMagicSquare(int[][] grid) {
+        int m = grid.length, n = grid[0].length;
+        int[][] rowPref = new int[m][n + 1];
+        int[][] colPref = new int[m + 1][n];
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                rowPref[i][j + 1] = rowPref[i][j] + grid[i][j];
+                colPref[i + 1][j] = colPref[i][j] + grid[i][j];
+            }
+        }
+            for(int size = Math.min(m,n);size>=2;size--){
+                for(int i=0;i+size <= m;i++){
+                    for(int j=0;j + size <= n;j++){
+                        if(isMagic(grid, rowPref, colPref, i, j, size)){
+                            return size;
+                        }
+                    }
+                }
+            }
+        return 1;
+    }
+    private boolean isMagic(int[][] grid, int[][] rowPref, int[][] colPref, int r, int c, int size){
+        int target = rowPref[r][c + size] - rowPref[r][c];
+        for(int i = r;i< r+size;i++){
+            int sum = rowPref[i][c + size] - rowPref[i][c];
+            if(sum != target) return false;
+        }
+        for(int j=c;j<c+size;j++){
+            int sum = colPref[r + size][j] - colPref[r][j];
+            if(sum != target) return false;
+        }
+        int dig1 = 0;
+        for(int k = 0;k<size;k++){
+            dig1 += grid[r + k][c + k]; 
+        }
+        if(dig1 != target) return false;
+        int dig2 = 0;
+        for(int k=0;k<size;k++){
+            dig2 += grid[r + k][c + size - 1 - k];
+        }
+        if(dig2 != target) return false;
+        return true;
+    }
+}
